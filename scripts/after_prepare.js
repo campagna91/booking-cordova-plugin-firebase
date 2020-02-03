@@ -10,6 +10,7 @@
 var fs = require('fs');
 var path = require('path');
 var utilities = require("./lib/utilities");
+console.log("AFTER-PREPARE", utilities);
 
 var config = fs.readFileSync('config.xml').toString();
 var name = utilities.getValue(config, 'name');
@@ -43,7 +44,7 @@ var PLATFORM = {
   }
 };
 
-module.exports = function (context) {
+module.exports = function(context) {
   //get platform from the context supplied by cordova
   var platforms = context.opts.platforms;
   // Copy key files to their platform specific folders

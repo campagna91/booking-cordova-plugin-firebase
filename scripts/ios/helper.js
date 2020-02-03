@@ -3,6 +3,9 @@ var fs = require("fs");
 var path = require("path");
 var utilities = require("../lib/utilities");
 
+
+console.log("HELPERJS", utilities);
+
 /**
  * This is used as the display text for the build phase block in XCode as well as the
  * inline comments inside of the .pbxproj file for the build script phase block.
